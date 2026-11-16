@@ -3,7 +3,9 @@ import T from '@/components/ui/T'
 import teamData from '@/data/team.json'
 
 const ROLE_COLORS: Record<string, string> = {
+  'Lead Developer & Student Researcher': 'bg-blue-100 text-blue-700',
   'Lead Student Researcher': 'bg-blue-100 text-blue-700',
+  'Academic Advisor / Faculty Mentor': 'bg-green-100 text-green-700',
   'Faculty Advisor / Guide': 'bg-green-100 text-green-700',
 }
 
@@ -109,7 +111,13 @@ export default function AboutPage() {
           </div>
           <div>
             <span className="font-semibold text-slate-700">
-              <T en="Contact: " hi="संपर्क: " />
+              <T en="Lead Developer: " hi="प्रमुख डेवलपर: " />
+            </span>
+            <span className="font-medium text-slate-800">Mohammad Sahil Shaikh</span>
+          </div>
+          <div>
+            <span className="font-semibold text-slate-700">
+              <T en="Email: " hi="ईमेल: " />
             </span>
             <a
               href={`mailto:${teamData.contactEmail}`}
@@ -117,6 +125,17 @@ export default function AboutPage() {
               style={{ color: 'var(--brand-green)' }}
             >
               {teamData.contactEmail}
+            </a>
+          </div>
+          <div>
+            <span className="font-semibold text-slate-700">
+              <T en="Contact Number: " hi="संपर्क नंबर: " />
+            </span>
+            <a
+              href="tel:+919263602455"
+              className="underline font-medium text-blue-600 hover:text-blue-800"
+            >
+              +91 9263602455
             </a>
           </div>
         </div>

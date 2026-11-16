@@ -4,7 +4,7 @@ import { useState, FormEvent } from 'react'
 import Link from 'next/link'
 import { useLang } from '@/components/ui/LangContext'
 import T from '@/components/ui/T'
-import { Mail, AlertCircle, Loader2, CheckCircle2, Send } from 'lucide-react'
+import { Mail, Phone, MessageSquare, GraduationCap, AlertCircle, Loader2, CheckCircle2, Send, User } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 
 const MESSAGE_TYPES = [
@@ -105,26 +105,102 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* Email card */}
-      <a
-        href="mailto:avwcs-feasibility@example.edu.in"
-        className="flex items-center gap-4 p-5 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow"
-      >
-        <span
-          className="p-3 rounded-xl shrink-0"
-          style={{ backgroundColor: 'var(--brand-navy)', color: '#fff' }}
-        >
-          <Mail size={20} />
-        </span>
-        <div className="min-w-0">
-          <div className="text-xs text-slate-400 font-medium uppercase tracking-wide">
-            <T en="Email" hi="ईमेल" />
+      {/* Developer Profile Card */}
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-2xl p-6 sm:p-7 shadow-md">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1.5">
+            <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-200 border border-blue-400/30 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+              <User size={13} />
+              <T en="Lead Developer & Researcher" hi="प्रमुख डेवलपर एवं शोधकर्ता" />
+            </div>
+            <h2 className="text-2xl font-bold tracking-tight text-white">
+              MOHAMMAD SAHIL SHAIKH
+            </h2>
+            <div className="flex items-center gap-2 text-sm text-blue-100">
+              <GraduationCap size={16} className="text-blue-300 shrink-0" />
+              <span>Narula Institute of Technology (NiT), Agarpara, Kolkata</span>
+            </div>
           </div>
-          <div className="font-semibold break-all" style={{ color: 'var(--brand-navy)' }}>
-            avwcs-feasibility@example.edu.in
+          <div className="flex flex-wrap sm:flex-col gap-2 shrink-0">
+            <a
+              href="tel:+919263602455"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold backdrop-blur transition-colors text-white"
+            >
+              <Phone size={14} className="text-green-400" />
+              <span>+91 9263602455</span>
+            </a>
+            <a
+              href="mailto:sahilfact549@gmail.com"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold backdrop-blur transition-colors text-white"
+            >
+              <Mail size={14} className="text-amber-300" />
+              <span>sahilfact549@gmail.com</span>
+            </a>
           </div>
         </div>
-      </a>
+      </div>
+
+      {/* Contact Quick Action Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {/* Email Card */}
+        <a
+          href="mailto:sahilfact549@gmail.com"
+          className="flex flex-col justify-between p-5 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <span
+              className="p-2.5 rounded-xl shrink-0 text-white"
+              style={{ backgroundColor: 'var(--brand-navy)' }}
+            >
+              <Mail size={18} />
+            </span>
+            <div className="text-xs text-slate-400 font-semibold uppercase tracking-wide">
+              <T en="Direct Email" hi="सीधा ईमेल" />
+            </div>
+          </div>
+          <div className="font-semibold text-sm break-all text-slate-800 group-hover:text-blue-600 transition-colors">
+            sahilfact549@gmail.com
+          </div>
+        </a>
+
+        {/* Phone Call Card */}
+        <a
+          href="tel:+919263602455"
+          className="flex flex-col justify-between p-5 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <span className="p-2.5 rounded-xl shrink-0 text-white bg-green-600">
+              <Phone size={18} />
+            </span>
+            <div className="text-xs text-slate-400 font-semibold uppercase tracking-wide">
+              <T en="Call Direct" hi="कॉल करें" />
+            </div>
+          </div>
+          <div className="font-semibold text-sm text-slate-800 group-hover:text-green-600 transition-colors">
+            +91 9263602455
+          </div>
+        </a>
+
+        {/* WhatsApp Card */}
+        <a
+          href="https://wa.me/919263602455?text=Hello%20Mohammad%20Sahil%20Shaikh%2C%20I%20visited%20the%20AVWCS%20India%20Portal."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col justify-between p-5 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <span className="p-2.5 rounded-xl shrink-0 text-white bg-[#25D366]">
+              <MessageSquare size={18} />
+            </span>
+            <div className="text-xs text-slate-400 font-semibold uppercase tracking-wide">
+              <T en="WhatsApp Chat" hi="व्हाट्सएप चैट" />
+            </div>
+          </div>
+          <div className="font-semibold text-sm text-slate-800 group-hover:text-green-600 transition-colors">
+            Chat on WhatsApp →
+          </div>
+        </a>
+      </div>
 
       {/* Contact form */}
       <form

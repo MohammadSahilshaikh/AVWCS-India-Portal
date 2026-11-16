@@ -58,10 +58,40 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-blue-800 text-xs text-blue-300 text-center">
-          {lang === 'hi'
-            ? `© ${year} AVWCS भारत व्यवहार्यता अध्ययन — IIT शोध पोर्टल`
-            : `© ${year} AVWCS India Feasibility Study — IIT Research Portal`}
+        {/* Developer & Institution Credit Bar */}
+        <div className="mt-8 pt-6 border-t border-blue-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-blue-200">
+          <div className="text-center md:text-left space-y-1">
+            <div>
+              <span className="font-semibold text-white">
+                {lang === 'hi' ? 'डेवलपर एवं शोधकर्ता: ' : 'Developer & Lead Researcher: '}
+              </span>
+              <span className="font-bold text-amber-300">MOHAMMAD SAHIL SHAIKH</span>
+              <span className="text-blue-300"> — Narula Institute of Technology (NiT), Agarpara, Kolkata</span>
+            </div>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-blue-300">
+              <a href="tel:+919263602455" className="hover:text-white transition-colors underline">
+                📞 +91 9263602455
+              </a>
+              <span>•</span>
+              <a href="mailto:sahilfact549@gmail.com" className="hover:text-white transition-colors underline">
+                ✉️ sahilfact549@gmail.com
+              </a>
+              <span>•</span>
+              <a
+                href="https://wa.me/919263602455"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-300 transition-colors underline"
+              >
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+          <div className="text-center md:text-right text-blue-300 text-[11px]">
+            {lang === 'hi'
+              ? `© ${year} AVWCS भारत अध्ययन — NiT आगरपाड़ा शोध दल`
+              : `© ${year} AVWCS India Study — NiT Agarpara Research Team`}
+          </div>
         </div>
       </div>
     </footer>

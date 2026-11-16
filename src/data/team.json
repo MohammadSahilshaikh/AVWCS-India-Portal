@@ -4,26 +4,34 @@
     "hi": "स्वचालित वैक्यूम कचरा संग्रह प्रणाली (AVWCS) — भारतीय शहरी फ़ीज़िबिलिटी अध्ययन"
   },
   "institution": {
-    "en": "Civil & Environmental Infrastructure Research Group (IIT Project Portal)",
-    "hi": "सिविल एवं पर्यावरण अवसंरचना शोध समूह (IIT प्रोजेक्ट पोर्टल)"
+    "en": "Narula Institute of Technology (NiT), Agarpara, Kolkata",
+    "hi": "नरूला इंस्टीट्यूट ऑफ टेक्नोलॉजी (NiT), आगरपाड़ा, कोलकाता"
+  },
+  "developer": {
+    "name": "MOHAMMAD SAHIL SHAIKH",
+    "email": "sahilfact549@gmail.com",
+    "phone": "+91 9263602455",
+    "college": "Narula Institute of Technology (NiT), Agarpara, Kolkata",
+    "role": "Lead Developer & Student Researcher"
   },
   "members": [
     {
-      "role": { "en": "Lead Student Researcher", "hi": "प्रमुख शोधकर्ता (छात्र)" },
-      "name": { "en": "[Your Name — Edit in data/team.json]", "hi": "[आपका नाम — data/team.json में बदलें]" },
+      "role": { "en": "Lead Developer & Student Researcher", "hi": "प्रमुख डेवलपर एवं छात्र शोधकर्ता" },
+      "name": { "en": "Mohammad Sahil Shaikh", "hi": "मोहम्मद साहिल शेख" },
       "focus": {
-        "en": "Pneumatic network sizing, Indian SWM Rules 2026 integration & township lifecycle modeling",
-        "hi": "न्यूमैटिक पाइप डिज़ाइन, भारतीय SWM नियम 2026 एवं टाउनशिप मॉडलिंग"
+        "en": "Student at Narula Institute of Technology (NiT), Agarpara. Pneumatic pipeline architecture, full-stack Next.js simulation portal, and SWM Rules 2026 integration.",
+        "hi": "नरूला इंस्टीट्यूट ऑफ टेक्नोलॉजी (NiT), आगरपाड़ा के छात्र। न्यूमैटिक पाइपलाइन डिज़ाइन, फुल-स्टैक Next.js सिमुलेशन पोर्टल और SWM नियम 2026।"
       }
     },
     {
-      "role": { "en": "Faculty Advisor / Guide", "hi": "प्रोफेसर / शोध मार्गदर्शक" },
-      "name": { "en": "[Faculty Guide Name — Edit in data/team.json]", "hi": "[गाइड का नाम — data/team.json में बदलें]" },
+      "role": { "en": "Academic Advisor / Faculty Mentor", "hi": "अकादमिक सलाहकार / फैकल्टी मेंटर" },
+      "name": { "en": "Faculty Advisor (Civil / Environmental Dept., NiT Agarpara)", "hi": "फैकल्टी सलाहकार (सिविल / पर्यावरण विभाग, NiT आगरपाड़ा)" },
       "focus": {
-        "en": "Municipal solid waste engineering, environmental feasibility & public infrastructure policy",
-        "hi": "नगरपालिका ठोस अपशिष्ट इंजीनियरिंग एवं सार्वजनिक नीति समीक्षा"
+        "en": "Municipal solid waste engineering, environmental impact assessment & smart city infrastructure planning.",
+        "hi": "नगरपालिका ठोस अपशिष्ट इंजीनियरिंग, पर्यावरण प्रभाव मूल्यांकन एवं स्मार्ट सिटी बुनियादी ढांचा नियोजन।"
       }
     }
   ],
-  "contactEmail": "avwcs-feasibility@example.edu.in"
+  "contactEmail": "sahilfact549@gmail.com",
+  "contactPhone": "+91 9263602455"
 }

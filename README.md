@@ -95,6 +95,17 @@ npm run start
 
 ---
 
+## 👨‍💻 Developer & Author
+
+- **Developer**: **MOHAMMAD SAHIL SHAIKH**
+- **Institution**: **Narula Institute of Technology (NiT), Agarpara, Kolkata**
+- **Role**: Lead Developer & Student Researcher
+- **Contact Email**: [sahilfact549@gmail.com](mailto:sahilfact549@gmail.com)
+- **Phone / WhatsApp**: [+91 9263602455](tel:+919263602455)
+- **GitHub**: [MohammadSahilshaikh](https://github.com/MohammadSahilshaikh)
+
+---
+
 ## 📜 License & Acknowledgements
 
-Developed as part of the IIT / Urban Infrastructure Engineering Feasibility Study.
+Developed by Mohammad Sahil Shaikh at Narula Institute of Technology (NiT), Agarpara, as part of the Automated Vacuum Waste Collection System (AVWCS) Urban Infrastructure Feasibility Study.

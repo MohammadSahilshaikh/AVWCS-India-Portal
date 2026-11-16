@@ -1,0 +1,119 @@
+{
+  "phases": [
+    {
+      "step": 1,
+      "duration": { "en": "Months 1–2", "hi": "माह 1–2" },
+      "title": { "en": "Feasibility Study", "hi": "फ़ीज़िबिलिटी अध्ययन" },
+      "desc": {
+        "en": "Site waste audit, utility mapping, density check, power & solar sizing, initial capex/opex screening.",
+        "hi": "साइट कचरा ऑडिट, भूमिगत लाइनों की जांच, जनसंख्या घनत्व, बिजली/सोलर आकलन और प्रारंभिक बजट जांच।"
+      }
+    },
+    {
+      "step": 2,
+      "duration": { "en": "Months 3–5", "hi": "माह 3–5" },
+      "title": { "en": "Detailed Project Report (DPR)", "hi": "विस्तृत परियोजना रिपोर्ट (DPR)" },
+      "desc": {
+        "en": "Geotechnical soil survey, pneumatic network modeling, terminal civil drawings, tender & SLA drafting.",
+        "hi": "मिट्टी सर्वेक्षण, पाइप नेटवर्क डिज़ाइन, टर्मिनल भवन नक्शे, टेंडर और O&M शर्तों का मसौदा।"
+      }
+    },
+    {
+      "step": 3,
+      "duration": { "en": "Months 6–14", "hi": "माह 6–14" },
+      "title": { "en": "Pilot Construction & Commissioning", "hi": "पायलट निर्माण एवं टेस्टिंग" },
+      "desc": {
+        "en": "Pipeline trenching with water/sewer lines, inlet installation, terminal mechanical erection & PLC trial.",
+        "hi": "अन्य लाइनों के साथ पाइप बिछाना, इनलेट लगाना, टर्मिनल मशीनरी स्थापना और PLC ट्रायल।"
+      }
+    },
+    {
+      "step": 4,
+      "duration": { "en": "Months 15–26", "hi": "माह 15–26" },
+      "title": { "en": "12-Month Monitored Operation", "hi": "12 महीने की निगरानी व मूल्यांकन" },
+      "desc": {
+        "en": "Independent audit of kWh/tonne, valve uptime, citizen complaints, wet-waste purity, and real O&M expenditure.",
+        "hi": "बिजली खपत (kWh/टन), सिस्टम अपटाइम, शिकायतें, कचरा पृथक्करण गुणवत्ता और वास्तविक खर्च का 1-वर्षीय ऑडिट।"
+      }
+    },
+    {
+      "step": 5,
+      "duration": { "en": "Month 27+", "hi": "माह 27+" },
+      "title": { "en": "Scale-Up / City Decision", "hi": "विस्तार का निर्णय" },
+      "desc": {
+        "en": "Expand to neighboring planned phases ONLY if 12-month pilot KPIs validate cost, energy & reliability targets.",
+        "hi": "यदि 12 महीने के पायलट KPI सफल रहते हैं, तभी अगले चरणों में विस्तार का निर्णय लिया जाए।"
+      }
+    }
+  ],
+  "deliveryModels": [
+    {
+      "model": { "en": "PPP / DBFOT (Design-Build-Finance-Operate-Transfer)", "hi": "PPP / DBFOT मॉडल (निजी भागीदारी)" },
+      "whoFunds": { "en": "Private concessionaire finances & builds; ULB pays tipping/availability annuity.", "hi": "निजी कंपनी निर्माण और निवेश करती है; नगर निकाय तय सेवा शुल्क देता है।" },
+      "pros": { "en": "Transfers construction & technical performance risk off municipal books; guarantees skilled O&M.", "hi": "तकनीकी जोखिम निजी ऑपरेटर पर रहता है; कुशल O&M की गारंटी रहती है।" },
+      "cons": { "en": "Higher long-term financing cost; requires minimum guaranteed tonnage & airtight contract.", "hi": "दीर्घकालिक वित्तीय लागत अधिक हो सकती है; न्यूनतम कचरा मात्रा की गारंटी व मज़बूत अनुबंध ज़रूरी।" }
+    },
+    {
+      "model": { "en": "Public CAPEX + Specialist Operator O&M", "hi": "सरकारी पूंजी (CAPEX) + विशेषज्ञ ऑपरेटर O&M" },
+      "whoFunds": { "en": "Smart City / SBM-U / State grant funds CAPEX; specialist firm runs 5–7 yr O&M.", "hi": "सरकार/स्मार्ट सिटी/SBM-U फंड से निर्माण; 5–7 साल का संचालन अनुबंध विशेषज्ञ कंपनी के पास।" },
+      "pros": { "en": "Lower overall lifecycle cost; full public ownership of underground infrastructure from Day 1.", "hi": "कुल जीवनचक्र लागत कम; पहले दिन से बुनियादी ढांचे का पूर्ण स्वामित्व सरकार के पास।" },
+      "cons": { "en": "Upfront government capital allocation needed; ULB must strictly enforce O&M uptime penalties.", "hi": "शुरुआती सरकारी बजट आवश्यक; अपटाइम और रखरखाव की कड़ी निगरानी नगर निकाय को करनी होगी।" }
+    }
+  ],
+  "kpis": [
+    {
+      "metric": { "en": "Internal Street Truck Trips", "hi": "आंतरिक सड़कों पर कचरा ट्रक फेरे" },
+      "target": { "en": "90–100% reduction within pilot zone", "hi": "पायलट क्षेत्र के अंदर 90–100% कमी" }
+    },
+    {
+      "metric": { "en": "Specific Power Consumption", "hi": "विशिष्ट बिजली खपत" },
+      "target": { "en": "Tracked daily vs ≤100 kWh/tonne benchmark", "hi": "≤100 kWh/टन मानक के मुकाबले दैनिक माप" }
+    },
+    {
+      "metric": { "en": "System Uptime & Valve Availability", "hi": "सिस्टम अपटाइम व वाल्व उपलब्धता" },
+      "target": { "en": "≥ 98% operational availability", "hi": "≥ 98% निर्बाध संचालन" }
+    },
+    {
+      "metric": { "en": "Citizen Odour / Overflow Complaints", "hi": "दुर्गंध / कूड़ा छलकने की शिकायतें" },
+      "target": { "en": "Near-zero overflow incidents logged", "hi": "लगभग शून्य ओवरफ़्लो घटनाएं" }
+    },
+    {
+      "metric": { "en": "Source-Segregated Recovery Purity", "hi": "स्रोत-पृथक्कृत कचरे की शुद्धता" },
+      "target": { "en": "≥ 85% uncontaminated wet & dry streams", "hi": "≥ 85% बिना मिलावट गीला व सूखा कचरा" }
+    }
+  ],
+  "risks": [
+    {
+      "risk": { "en": "High upfront capital expenditure", "hi": "अधिक शुरुआती पूंजीगत लागत" },
+      "mitigation": { "en": "Start with a bounded 1–2 km² greenfield pilot cluster co-trenched with water/sewer works.", "hi": "सीमित 1–2 वर्ग किमी के नए क्लस्टर से शुरुआत, जहाँ पानी/सीवर की खुदाई के साथ पाइप बिछें।" }
+    },
+    {
+      "risk": { "en": "High terminal electricity cost & grid carbon", "hi": "टर्मिनल की अधिक बिजली खपत व कार्बन" },
+      "mitigation": { "en": "Pair terminal with rooftop/captive solar PV and VFD suction scheduling only at ≥75% fill.", "hi": "टर्मिनल पर सोलर प्लांट लगाना और VFD से केवल 75% भराव पर ही वैक्यूम चलाना।" }
+    },
+    {
+      "risk": { "en": "Shortage of skilled local O&M staff", "hi": "प्रशिक्षित O&M कर्मचारियों की कमी" },
+      "mitigation": { "en": "Embed 5-year O&M + mandatory local technician certification inside vendor contract.", "hi": "वेंडर अनुबंध में 5-वर्षीय O&M और स्थानीय तकनीशियनों का अनिवार्य प्रशिक्षण शामिल करना।" }
+    },
+    {
+      "risk": { "en": "Retrofit chaos in old congested areas", "hi": "पुराने घने क्षेत्रों में खुदाई की समस्या" },
+      "mitigation": { "en": "Strict greenfield-first mandate (new townships, campuses, hospitals, transit hubs).", "hi": "केवल ग्रीनफील्ड (नई टाउनशिप, कैंपस, अस्पताल, एयरपोर्ट) क्षेत्रों को प्राथमिकता देना।" }
+    }
+  ],
+  "policies": [
+    {
+      "title": { "en": "Solid Waste Management Rules, 2026 (Effective April 1, 2026)", "hi": "ठोस अपशिष्ट प्रबंधन नियम, 2026 (1 अप्रैल 2026 से प्रभावी)" },
+      "detail": {
+        "en": "Mandates strict 4-stream source segregation, Bulk Waste Generator (≥100 kg/day or ≥20,000 sq m) on-site wet waste processing, and digital audit tracking via CPCB portals. AVWCS color-coded inlets + automated SCADA tonnage logs directly support digital compliance.",
+        "hi": "स्रोत पर चार-धारा पृथक्करण, बल्क वेस्ट जनरेटर (≥100 किग्रा/दिन या ≥20,000 वर्ग मी) के लिए ऑन-साइट गीला कचरा प्रबंधन, और CPCB डिजिटल पोर्टल पर ट्रैकिंग अनिवार्य है। AVWCS के रंग-आधारित इनलेट और SCADA डेटा इसमें सीधे मदद करते हैं।"
+      }
+    },
+    {
+      "title": { "en": "Swachh Bharat Mission – Urban (SBM-U 2.0) & Smart Townships", "hi": "स्वच्छ भारत मिशन – शहरी (SBM-U 2.0) एवं स्मार्ट टाउनशिप" },
+      "detail": {
+        "en": "Focuses on bin-free / litter-free cities, scientific processing, and eliminating open dumpsites and manual scavenging hazards. Closed underground collection aligns directly with zero-bin, zero-manual-handling urban benchmarks.",
+        "hi": "कचरा-पेटी मुक्त शहर, वैज्ञानिक प्रसंस्करण, और सफ़ाई कर्मियों द्वारा कचरा हाथ से उठाने की समस्या खत्म करने पर ज़ोर देता है। बंद भूमिगत संग्रहण इस लक्ष्य से सीधे मेल खाता है।"
+      }
+    }
+  ]
+}

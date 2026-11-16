@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "id": "trucks",
+      "criteria": {
+        "en": "Garbage trucks inside residential streets",
+        "hi": "आवासीय गलियों में कचरा ट्रकों का आना-जाना"
+      },
+      "truck": {
+        "en": "Yes — daily door-to-door tippers & compactors create noise, traffic & diesel exhaust",
+        "hi": "हाँ — रोज़ाना टिपर/ट्रक गलियों में घूमते हैं (ट्रैफिक, शोर और डीज़ल धुआँ)"
+      },
+      "avwcs": {
+        "en": "No — waste travels underground; heavy trucks only visit the outer terminal edge",
+        "hi": "नहीं — कचरा ज़मीन के नीचे चलता है; ट्रक सिर्फ़ बाहरी टर्मिनल तक आते हैं"
+      },
+      "winner": "avwcs"
+    },
+    {
+      "id": "odour",
+      "criteria": {
+        "en": "Open bins, street litter & foul odour",
+        "hi": "खुले कूड़ेदान, गंदगी और बदबू"
+      },
+      "truck": {
+        "en": "High risk — bins overflow between pickups, attracting stray animals & flies",
+        "hi": "ज़्यादा जोखिम — कलेक्शन के बीच कूड़ेदान भरकर छलकते हैं, आवारा पशु व मक्खियाँ आती हैं"
+      },
+      "avwcs": {
+        "en": "Very low — sealed inlets, vacuumed frequently, terminal exhaust biofiltered",
+        "hi": "बहुत कम — बंद इनलेट, समय पर वैक्यूम सफ़ाई, और टर्मिनल पर बायोफिल्टर"
+      },
+      "winner": "avwcs"
+    },
+    {
+      "id": "safety",
+      "criteria": {
+        "en": "Direct manual contact of sanitation workers with waste",
+        "hi": "सफ़ाई कर्मियों का कचरे से सीधा संपर्क और स्वास्थ्य जोखिम"
+      },
+      "truck": {
+        "en": "High — workers manually lift bins, breathe fumes and handle sharp/mixed waste",
+        "hi": "ज़्यादा — कर्मियों को हाथ से कूड़ा उठाना और दुर्गंध/नुकीले कचरे का जोखिम झेलना पड़ता है"
+      },
+      "avwcs": {
+        "en": "Minimal — automated suction & compaction inside closed steel equipment",
+        "hi": "न के बराबर — पूरा परिवहन और कॉम्पैक्शन बंद स्टील सिस्टम के अंदर स्वचालित होता है"
+      },
+      "winner": "avwcs"
+    },
+    {
+      "id": "capex",
+      "criteria": {
+        "en": "Initial Capital Cost (CAPEX) & 25-Yr Asset Value",
+        "hi": "शुरुआती लागत (CAPEX) व 25-वर्षीय संपत्ति लाभ"
+      },
+      "truck": {
+        "en": "Low Year-1 spend, but trucks wear out every 7–8 yrs (repeat fleet purchases) + surface bin bays consume street land",
+        "hi": "साल-1 लागत कम, पर हर 7–8 साल में नए ट्रक खरीदने पड़ते हैं + सड़क पर कूड़ा प्वाइंट की ज़मीन घिरती है"
+      },
+      "avwcs": {
+        "en": "Higher Year-1 build, yet co-trenching with water/sewer cuts digging cost, frees valuable street land, and builds a 25–30 yr steel asset",
+        "hi": "साल-1 लागत अधिक, पर नए प्रोजेक्ट में पानी/सीवर के साथ एक ही खुदाई से खर्च घटता है, ज़मीन बचती है और 25–30 साल चलता है"
+      },
+      "winner": "longterm",
+      "note": {
+        "en": "Year-1 CAPEX: Truck · 25-Yr Greenfield Value: AVWCS (verify via DPR)",
+        "hi": "साल-1: ट्रक · 25-वर्षीय ग्रीनफील्ड मूल्य: AVWCS (DPR से सत्यापित करें)"
+      }
+    },
+    {
+      "id": "power",
+      "criteria": {
+        "en": "Grid Electricity vs Rooftop Solar + Fuel Use",
+        "hi": "बिजली खपत बनाम रूफटॉप सोलर व डीज़ल ईंधन"
+      },
+      "truck": {
+        "en": "Zero grid electricity, but burns imported fossil diesel daily in residential streets with ongoing emissions & price hikes",
+        "hi": "ग्रिड बिजली नहीं, पर गलियों में रोज़ाना डीज़ल जलता है — धुआँ, कार्बन उत्सर्जन और बढ़ता ईंधन खर्च"
+      },
+      "avwcs": {
+        "en": "Uses ~80–120 kWh/tonne electric suction, which can be offset directly using terminal rooftop Solar PV panels & biogas for zero street diesel exhaust",
+        "hi": "~80–120 kWh/टन बिजली लगती है, जिसे टर्मिनल पर सोलर पैनल व बायोगैस से चलाकर ग्रिड निर्भरता व सड़क धुआँ दोनों घटाए जा सकते हैं"
+      },
+      "winner": "avwcs",
+      "note": {
+        "en": "Requires Solar PV / renewable pairing at terminal",
+        "hi": "टर्मिनल पर सोलर PV पैनल जोड़ने पर सर्वोत्तम लाभ"
+      }
+    },
+    {
+      "id": "maintenance",
+      "criteria": {
+        "en": "Operation & Maintenance (O&M) Skill Required",
+        "hi": "संचालन और रखरखाव (O&M) की जटिलता"
+      },
+      "truck": {
+        "en": "Simple — local mechanics and drivers are widely available across India",
+        "hi": "आसान — ड्राइवर और वाहन मैकेनिक हर शहर में आसानी से उपलब्ध हैं"
+      },
+      "avwcs": {
+        "en": "Complex — requires trained PLC, pneumatic valve, blower & welder technicians",
+        "hi": "जटिल — PLC, न्यूमैटिक वाल्व, ब्लोअर और वेल्डिंग के प्रशिक्षित इंजीनियर ज़रूरी"
+      },
+      "winner": "truck"
+    },
+    {
+      "id": "new_area",
+      "criteria": {
+        "en": "Suitability for New Planned Townships / Campuses",
+        "hi": "नई प्लान्ड टाउनशिप, स्मार्ट सिटी पॉकेट या कैंपस के लिए"
+      },
+      "truck": {
+        "en": "Works well, though surface vehicle lanes and bin bays remain necessary",
+        "hi": "ठीक काम करता है, पर सड़कों पर कचरा वाहन और कूड़ा प्वाइंट रखने पड़ते हैं"
+      },
+      "avwcs": {
+        "en": "Excellent — pipes laid alongside water/sewer lines during initial construction",
+        "hi": "बहुत अच्छा — निर्माण के समय पानी/सीवर के साथ ही पाइप बिछाना आसान और सस्ता पड़ता है"
+      },
+      "winner": "avwcs"
+    },
+    {
+      "id": "old_area",
+      "criteria": {
+        "en": "Suitability for Dense, Old Historic City Lanes",
+        "hi": "पुराने, घने और संकरे भारतीय शहरों के लिए"
+      },
+      "truck": {
+        "en": "Practical — compact mini-tippers and e-carts adapt to narrow streets",
+        "hi": "व्यावहारिक — छोटे टिपर और ई-रिक्शा संकरी गलियों में आसानी से चल सकते हैं"
+      },
+      "avwcs": {
+        "en": "Very difficult — unmapped underground utilities, narrow lanes & heavy disruption",
+        "hi": "बहुत मुश्किल — पहले से दबी केबल/पाइप, संकरी गलियां और खुदाई से भारी असुविधा"
+      },
+      "winner": "truck"
+    }
+  ],
+  "bars": [
+    {
+      "id": "street_clean",
+      "label": { "en": "Street Hygiene & Zero Bin Overflow", "hi": "सड़क स्वच्छता व दुर्गंध नियंत्रण" },
+      "truckScore": 45,
+      "avwcsScore": 95
+    },
+    {
+      "id": "worker_safety",
+      "label": { "en": "Worker Health & Zero Direct Contact", "hi": "कर्मचारी सुरक्षा व कम संपर्क" },
+      "truckScore": 35,
+      "avwcsScore": 94
+    },
+    {
+      "id": "solar_clean",
+      "label": { "en": "Solar Clean-Energy Potential", "hi": "सोलर स्वच्छ ऊर्जा क्षमता" },
+      "truckScore": 22,
+      "avwcsScore": 86
+    },
+    {
+      "id": "asset_land",
+      "label": { "en": "25-Yr Asset & Land Value Saved", "hi": "25-वर्षीय संपत्ति व ज़मीन बचत" },
+      "truckScore": 40,
+      "avwcsScore": 84
+    },
+    {
+      "id": "low_capex",
+      "label": { "en": "Low Year-1 Entry Budget", "hi": "कम शुरुआती साल-1 बजट" },
+      "truckScore": 90,
+      "avwcsScore": 30
+    },
+    {
+      "id": "easy_om",
+      "label": { "en": "Simplicity of Local Maintenance", "hi": "स्थानीय रखरखाव की सरलता" },
+      "truckScore": 88,
+      "avwcsScore": 40
+    }
+  ],
+  "guide": {
+    "chooseTruck": {
+      "title": { "en": "Choose Modernized Truck / E-Cart System When:", "hi": "आधुनिक ट्रक / ई-कार्ट प्रणाली कब चुनें:" },
+      "points": {
+        "en": [
+          "The area is an existing, densely populated old city with unmapped underground utilities.",
+          "Municipal capital budgets are tight and phased low-capex rollout is required.",
+          "Skilled industrial electro-mechanical O&M contractors are unavailable locally.",
+          "Low-density sprawling suburbs where pipe length per household becomes uneconomical."
+        ],
+        "hi": [
+          "इलाका पुराना और घना बसा हो जहाँ ज़मीन के नीचे पुरानी पानी/बिजली/गैस लाइनें भरी हों।",
+          "नगर निकाय के पास शुरुआती पूंजीगत बजट सीमित हो।",
+          "स्थानीय स्तर पर औद्योगिक वैक्यूम व PLC रखरखाव की प्रशिक्षित टीम उपलब्ध न हो।",
+          "आबादी बहुत बिखरी हुई हो, जिससे प्रति घर पाइपलाइन की लंबाई बहुत ज़्यादा हो जाए।"
+        ]
+      }
+    },
+    "chooseAvwcs": {
+      "title": { "en": "Choose AVWCS Pilot / Implementation When:", "hi": "AVWCS पायलट या प्रोजेक्ट कब चुनें:" },
+      "points": {
+        "en": [
+          "Developing a greenfield smart township, GIFT/industrial corridor, university campus, hospital or airport.",
+          "Utility trenches are already being excavated during construction—avoiding retrofit disruption and cutting CAPEX.",
+          "High density guarantees short pipe runs per household and high daily tonnage over 25–30 years.",
+          "Terminal rooftop Solar PV / biogas can power daytime suction cycles, replacing daily street diesel trips."
+        ],
+        "hi": [
+          "कोई नई प्लान्ड स्मार्ट टाउनशिप, बड़ा शैक्षणिक कैंपस, अस्पताल कॉम्प्लेक्स या एयरपोर्ट बन रहा हो।",
+          "निर्माण के दौरान पानी और सीवर के साथ ही एक ही ट्रेंच में पाइपलाइन डालकर CAPEX घटाया जा सकता हो।",
+          "उच्च घनत्व हो ताकि 25–30 साल के जीवनकाल में प्रति घर पाइप लंबाई कम व ज़मीन की बचत अधिक मिले।",
+          "टर्मिनल पर रूफटॉप सोलर पैनल / बायोगैस से वैक्यूम चलाकर रोज़ाना डीज़ल ट्रकों को हटाया जा सके।"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "key": "deposit",
+      "badge": {
+        "en": "Street Level",
+        "hi": "सड़क स्तर"
+      },
+      "title": {
+        "en": "1. Segregated Deposit",
+        "hi": "1. अलग-अलग इनलेट में कचरा डालना"
+      },
+      "shortLabel": {
+        "en": "3-Stream Inlets",
+        "hi": "हरा / नीला / धूसर इनलेट"
+      },
+      "simple": {
+        "en": "Residents drop waste into color-coded street inlets: Green for wet/organic kitchen waste, Blue for dry recyclables, and Grey for residual waste. No open bins, no stray animals, no street litter.",
+        "hi": "नागरिक अलग-अलग रंग के इनलेट में कचरा डालते हैं: गीले/ऑर्गेनिक कचरे के लिए हरा, रीसाइकिल योग्य सूखे कचरे के लिए नीला, और बचे हुए कचरे के लिए धूसर (ग्रे)। सड़क पर कोई खुला कूड़ेदान या गंदगी नहीं रहती।"
+      },
+      "technical": {
+        "en": "Inlet hatches (typical drum/aperture diameter ~300–400 mm) use RFID/access-controlled locks or mechanical interlocks to prevent oversized objects and enforce source segregation per SWM Rules 2026.",
+        "hi": "इनलेट ढक्कन (लगभग 300–400 मिमी व्यास) में RFID या मैकेनिकल इंटरलॉक होता है ताकि बड़े/गलत सामान अंदर न जाएं और SWM नियम 2026 के अनुसार स्रोत पर ही कचरा अलग रहे।"
+      },
+      "diagramHighlight": "inlets",
+      "sourceTag": {
+        "en": "Design Principle · SWM Rules 2026",
+        "hi": "डिज़ाइन सिद्धांत · SWM नियम 2026"
+      }
+    },
+    {
+      "id": 2,
+      "key": "storage",
+      "badge": {
+        "en": "Underground Chute",
+        "hi": "भूमिगत च्यूट"
+      },
+      "title": {
+        "en": "2. Intermediate Chute Storage",
+        "hi": "2. च्यूट में अस्थायी भंडारण और सेंसर"
+      },
+      "shortLabel": {
+        "en": "Closed Valve & Level Sensor",
+        "hi": "बंद वाल्व और लेवल सेंसर"
+      },
+      "simple": {
+        "en": "Waste rests safely inside a sealed vertical chamber right below the inlet. The bottom valve stays tightly closed until a level sensor detects it is full—or a scheduled timer triggers.",
+        "hi": "कचरा इनलेट के ठीक नीचे बंद चैंबर (च्यूट) में जमा होता है। नीचे का वाल्व तब तक बंद रहता है जब तक लेवल सेंसर भरने का संकेत न दे या तय टाइमर पूरा न हो।"
+      },
+      "technical": {
+        "en": "Ultrasonic/optical level sensors monitor fill height (typically triggering a suction request at 75–85% capacity). Each vertical chute isolates waste from the main vacuum line via a pneumatically actuated discharge valve.",
+        "hi": "अल्ट्रासोनिक/ऑप्टिकल सेंसर च्यूट की भराई देखते हैं (आमतौर पर 75–85% पर सिग्नल)। हर च्यूट के नीचे एक न्यूमैटिक डिस्चार्ज वाल्व मुख्य पाइपलाइन से दबाव को अलग रखता है।"
+      },
+      "diagramHighlight": "chute",
+      "sourceTag": {
+        "en": "Control Logic · Standard AVWCS",
+        "hi": "कंट्रोल लॉजिक · मानक AVWCS"
+      }
+    },
+    {
+      "id": 3,
+      "key": "vacuum",
+      "badge": {
+        "en": "Central Terminal",
+        "hi": "केंद्रीय टर्मिनल"
+      },
+      "title": {
+        "en": "3. Vacuum Generation",
+        "hi": "3. टर्मिनल पर वैक्यूम बनाना"
+      },
+      "shortLabel": {
+        "en": "Exhauster Fans Active",
+        "hi": "एग्ज़ॉस्टर पंखे चालू"
+      },
+      "simple": {
+        "en": "Inside the central waste terminal, powerful electric exhauster fans spin up and pull air out of the underground steel pipe network, creating strong suction—like a giant industrial vacuum cleaner.",
+        "hi": "केंद्रीय टर्मिनल में बड़े इलेक्ट्रिक एग्ज़ॉस्टर पंखे घूमकर भूमिगत स्टील पाइप से हवा खींचते हैं, जिससे एक तेज़ वैक्यूम खिंचाव बनता है।"
+      },
+      "technical": {
+        "en": "Variable Frequency Drive (VFD) centrifugal exhausters generate negative gauge pressure (typically -40 to -70 kPa depending on network length and friction losses) before any discharge valve opens.",
+        "hi": "VFD से नियंत्रित सेंट्रीफ्यूगल एग्ज़ॉस्टर पंखे पाइप की लंबाई के अनुसार नेगेटिव प्रेशर (लगभग -40 से -70 kPa) बनाते हैं; इसके बाद ही वाल्व खुलता है।"
+      },
+      "diagramHighlight": "fans",
+      "sourceTag": {
+        "en": "Literature Range · Pneumatic Engineering",
+        "hi": "तकनीकी सीमा · न्यूमैटिक इंजीनियरिंग"
+      }
+    },
+    {
+      "id": 4,
+      "key": "transport",
+      "badge": {
+        "en": "Underground Pipe",
+        "hi": "भूमिगत पाइपलाइन"
+      },
+      "title": {
+        "en": "4. High-Speed Air Transport",
+        "hi": "4. हवा के दबाव से भूमिगत परिवहन"
+      },
+      "shortLabel": {
+        "en": "60–80 km/h Airflow",
+        "hi": "तेज़ हवा द्वारा परिवहन"
+      },
+      "simple": {
+        "en": "Air intake valves open behind the selected inlet, and rushing air pushes the waste silently underground through sealed pipes straight to the central terminal—zero garbage trucks on streets.",
+        "hi": "इनलेट के पीछे का एयर-वाल्व खुलते ही तेज़ हवा कचरे को बंद भूमिगत पाइप से होते हुए सीधे टर्मिनल तक पहुंचा देती है—गली में एक भी कचरा ट्रक नहीं आता।"
+      },
+      "technical": {
+        "en": "One waste fraction at a time travels at ~60–80 km/h (~17–22 m/s) through 400–500 mm carbon steel pipes buried 1.5–2.5 m deep. Bends use large radii and wear-resistant steel liners.",
+        "hi": "एक समय में केवल एक प्रकार का कचरा ~60–80 किमी/घंटा की रफ्तार से 400–500 मिमी व्यास की स्टील पाइपलाइन (1.5–2.5 मीटर गहराई) में चलता है। मोड़ों पर घिसाव-रोधी स्टील लाइनिंग होती है।"
+      },
+      "diagramHighlight": "pipeline",
+      "sourceTag": {
+        "en": "Published Benchmark · 60–90 km/h",
+        "hi": "प्रकाशित मानक · 60–90 किमी/घंटा"
+      }
+    },
+    {
+      "id": 5,
+      "key": "separation",
+      "badge": {
+        "en": "Separator & Press",
+        "hi": "सेपरेटर और कॉम्पैक्टर"
+      },
+      "title": {
+        "en": "5. Separation & Compaction",
+        "hi": "5. हवा से कचरा अलग और कॉम्पैक्ट करना"
+      },
+      "shortLabel": {
+        "en": "Cyclone + Compactor",
+        "hi": "साइक्लोन + कॉम्पैक्टर"
+      },
+      "simple": {
+        "en": "At the terminal, a cyclone unit separates the waste from the fast-moving air. Waste drops into a hydraulic compactor that squeezes it tightly into sealed containers by waste type.",
+        "hi": "टर्मिनल पर साइक्लोन मशीन हवा और कचरे को अलग करती है। कचरा हाइड्रोलिक कॉम्पैक्टर में गिरता है, जो उसे दबाकर संबंधित बंद कंटेनर में भर देता है।"
+      },
+      "technical": {
+        "en": "Cyclone vortex deceleration drops solid payloads via gravity through a rotary airlock into a diverter gate aligned to the matching stream's container (Organic, Recyclable, or Residual), followed by 3:1 to 5:1 hydraulic compaction.",
+        "hi": "साइक्लोन में वेग कम होने पर कचरा रोटरी एयरलॉक से डाइवर्टर गेट के ज़रिए अपने तय कंटेनर में गिरता है और हाइड्रोलिक कॉम्पैक्टर से 3:1 से 5:1 तक दब जाता है।"
+      },
+      "diagramHighlight": "separator",
+      "sourceTag": {
+        "en": "Mechanical Process · Terminal Design",
+        "hi": "मैकेनिकल प्रक्रिया · टर्मिनल डिज़ाइन"
+      }
+    },
+    {
+      "id": 6,
+      "key": "air_treatment",
+      "badge": {
+        "en": "Odour Control",
+        "hi": "दुर्गंध नियंत्रण"
+      },
+      "title": {
+        "en": "6. Exhaust Air Filtration & Biofilter",
+        "hi": "6. बायोफिल्टर से हवा की सफ़ाई"
+      },
+      "shortLabel": {
+        "en": "Dust & Odour Scrubbing",
+        "hi": "धूल व दुर्गंध फिल्टर"
+      },
+      "simple": {
+        "en": "Before the transport air is released back outside, it passes through dust filters and an active biofilter bed so nearby neighborhoods experience virtually zero foul smell.",
+        "hi": "कचरा लाने वाली हवा को बाहर छोड़ने से पहले धूल फिल्टर और बायोफिल्टर से गुजारा जाता है, जिससे टर्मिनल के आसपास बदबू न के बराबर रहती है।"
+      },
+      "technical": {
+        "en": "Multi-stage bag/cartridge particulate filters capture fine dust, followed by activated carbon or moist organic-media biofilters to oxidize VOCs and H₂S before atmospheric exhaust.",
+        "hi": "मल्टी-स्टेज डस्ट फिल्टर बारीक धूल रोकते हैं, जिसके बाद एक्टिवेटेड कार्बन या बायोफिल्टर बेड दुर्गंध पैदा करने वाली गैसों (VOCs/H₂S) को साफ करता है।"
+      },
+      "diagramHighlight": "biofilter",
+      "sourceTag": {
+        "en": "Environmental Control · Biofiltration",
+        "hi": "पर्यावरण नियंत्रण · बायोफिल्ट्रेशन"
+      }
+    },
+    {
+      "id": 7,
+      "key": "removal",
+      "badge": {
+        "en": "Sealed Haulage",
+        "hi": "सीलबंद परिवहन"
+      },
+      "title": {
+        "en": "7. Container Pickup for Processing",
+        "hi": "7. कंटेनर उठाना और प्रोसेसिंग"
+      },
+      "shortLabel": {
+        "en": "Composting / MRF / Disposal",
+        "hi": "कंपोस्टिंग / रीसाइक्लिंग"
+      },
+      "simple": {
+        "en": "Once a sealed container reaches 80–90% full, a hook-lift truck picks it up directly from the terminal edge—taking wet waste for composting/biogas and dry waste for recycling without touching streets.",
+        "hi": "जब बंद कंटेनर 80–90% भर जाता है, तो हुक-लिफ्ट ट्रक टर्मिनल से ही उसे उठाता है—गीला कचरा कंपोस्ट/बायोगैस प्लांट और सूखा रीसाइक्लिंग प्लांट में जाता है।"
+      },
+      "technical": {
+        "en": "Because waste is pre-compacted and sealed at a single perimeter terminal, bulk haulage trips drop sharply compared to door-to-door street tippers, keeping heavy collection vehicles off internal residential roads.",
+        "hi": "एक ही टर्मिनल पर कचरा कॉम्पैक्ट और सीलबंद होने से ट्रकों के फेरे काफी कम हो जाते हैं और भारी वाहन आवासीय गलियों में प्रवेश नहीं करते।"
+      },
+      "diagramHighlight": "container",
+      "sourceTag": {
+        "en": "Logistics Output · Terminal Haulage",
+        "hi": "लॉजिस्टिक्स आउटपुट · टर्मिनल"
+      }
+    }
+  ],
+  "sequenceCycle": [
+    {
+      "id": "organic",
+      "color": "#16A34A",
+      "label": {
+        "en": "Cycle 1: Organic / Wet Waste",
+        "hi": "चक्र 1: ऑर्गेनिक / गीला कचरा"
+      },
+      "status": {
+        "en": "Green Inlets Active → Diverter Gate → Wet Container",
+        "hi": "हरे इनलेट सक्रिय → डाइवर्टर गेट → गीला कंटेनर"
+      },
+      "detail": {
+        "en": "Only Green discharge valves open sequentially. Blue and Grey valves remain locked so wet kitchen waste never contaminates recyclables.",
+        "hi": "केवल हरे वाल्व क्रम से खुलते हैं। नीले और धूसर वाल्व बंद रहते हैं ताकि गीला कचरा सूखे रीसाइकिल कचरे में न मिले।"
+      }
+    },
+    {
+      "id": "purge_1",
+      "color": "#EA580C",
+      "label": {
+        "en": "Air Purge (15–30 sec)",
+        "hi": "पाइपलाइन एयर-पर्ज (15–30 सेकंड)"
+      },
+      "status": {
+        "en": "All Waste Valves Closed → Clean Air Flushes Pipe",
+        "hi": "सभी कचरा वाल्व बंद → तेज़ हवा से पाइप की सफ़ाई"
+      },
+      "detail": {
+        "en": "Before switching waste streams, air sweeps the pipe clear and the terminal diverter gate shifts to the next sealed container.",
+        "hi": "अगले कचरे का प्रकार शुरू करने से पहले हवा पाइप को पूरी तरह खाली करती है और टर्मिनल का गेट अगले कंटेनर की ओर घूमता है।"
+      }
+    },
+    {
+      "id": "recyclable",
+      "color": "#2563EB",
+      "label": {
+        "en": "Cycle 2: Recyclable / Dry Waste",
+        "hi": "चक्र 2: रीसाइकिल / सूखा कचरा"
+      },
+      "status": {
+        "en": "Blue Inlets Active → Diverter Gate → Dry MRF Container",
+        "hi": "नीले इनलेट सक्रिय → डाइवर्टर गेट → रीसाइक्लिंग कंटेनर"
+      },
+      "detail": {
+        "en": "Clean paper, plastics, and metals travel to the MRF-bound container dry and intact, preserving resale and recycling value.",
+        "hi": "कागज़, प्लास्टिक और धातु सूखी अवस्था में रीसाइक्लिंग कंटेनर में पहुंचते हैं, जिससे रीसाइक्लिंग की गुणवत्ता बनी रहती है।"
+      }
+    },
+    {
+      "id": "residual",
+      "color": "#475569",
+      "label": {
+        "en": "Cycle 3: Residual Waste",
+        "hi": "चक्र 3: शेष / अवशिष्ट कचरा"
+      },
+      "status": {
+        "en": "Grey Inlets Active → Diverter Gate → Residual Container",
+        "hi": "धूसर इनलेट सक्रिय → डाइवर्टर गेट → शेष कचरा कंटेनर"
+      },
+      "detail": {
+        "en": "Non-recyclable inert fraction is compacted separately, minimizing landfill volume as required under SWM Rules 2026.",
+        "hi": "गैर-रीसाइकिल कचरा अलग दबाया जाता है, जिससे लैंडफिल में जाने वाला कचरा कम से कम रहे।"
+      }
+    }
+  ]
+}

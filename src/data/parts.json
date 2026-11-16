@@ -1,0 +1,290 @@
+{
+  "parts": [
+    {
+      "id": "inlet",
+      "x": 14,
+      "y": 24,
+      "zone": "street",
+      "name": {
+        "en": "Street Deposit Inlets (3-Stream)",
+        "hi": "सड़क इनलेट (तीन-धारा प्रणाली)"
+      },
+      "role": {
+        "en": "User-facing stainless steel hatches mounted at street level or building service cores. Color-coded for Organic (Green), Recyclable (Blue), and Residual (Grey) waste.",
+        "hi": "सड़क स्तर या बिल्डिंग के पास लगे स्टेनलेस स्टील के ढक्कन। ऑर्गेनिक (हरा), रीसाइकिल (नीला) और शेष कचरे (धूसर) के लिए अलग-अलग रंग।"
+      },
+      "failure": {
+        "en": "Jamming from oversized cardboard/construction debris, damaged hatch rubber seals causing odour leak, or RFID/lock actuator wear under heavy daily use.",
+        "hi": "बड़े गत्ते या मलबे से अटकना, रबर सील खराब होने पर दुर्गंध आना, या रोज़ाना इस्तेमाल से लॉक/हिंज का घिसना।"
+      },
+      "civil": {
+        "en": "Requires raised concrete plinth (+150 mm above road crown) in monsoon-prone Indian cities so stormwater cannot flood into the underground pneumatic line.",
+        "hi": "भारतीय मानसून को देखते हुए सड़क से +150 मिमी ऊंचे कंक्रीट चबूतरे पर लगाना ज़रूरी है ताकि बारिश का पानी पाइप में न घुसे।"
+      },
+      "specs": {
+        "en": "Aperture: ~300–400 mm · Lock: RFID / Mechanical Interlock · Material: SS 304/316",
+        "hi": "व्यास: ~300–400 मिमी · लॉक: RFID/इंटरलॉक · सामग्री: स्टेनलेस स्टील 304/316"
+      }
+    },
+    {
+      "id": "chute",
+      "x": 14,
+      "y": 42,
+      "zone": "subsurface",
+      "name": {
+        "en": "Vertical Storage Chute",
+        "hi": "वर्टिकल स्टोरेज च्यूट"
+      },
+      "role": {
+        "en": "Buffer cylinder directly beneath each inlet that holds incoming waste batches until the scheduled or sensor-triggered suction cycle runs.",
+        "hi": "हर इनलेट के ठीक नीचे लगा भंडारण चैंबर, जो कचरे को तब तक रोके रखता है जब तक वैक्यूम चक्र शुरू न हो।"
+      },
+      "failure": {
+        "en": "Wet Indian organic waste sticking or bridging inside chute walls if slope/diameter is inadequate; corrosion from acidic kitchen leachate.",
+        "hi": "भारतीय गीले कचरे का दीवारों पर चिपकना या फंसना; रसोई के गीले कचरे से अंदर जंग लगने का जोखिम।"
+      },
+      "civil": {
+        "en": "Must sit inside a waterproof RCC inspection shaft with bottom sump drainage and access manhole for occasional mechanical clearing.",
+        "hi": "इसके चारों ओर वाटरप्रूफ RCC चैंबर और निरीक्षण मैनहोल होना चाहिए ताकि ज़रूरत पड़ने पर सफ़ाई हो सके।"
+      },
+      "specs": {
+        "en": "Typical buffer: 200–400 L · Anti-stick stainless/epoxy lining recommended for wet waste",
+        "hi": "क्षमता: 200–400 लीटर · गीले कचरे के लिए नॉन-स्टिक स्टील लाइनिंग उपयुक्त"
+      }
+    },
+    {
+      "id": "sensor",
+      "x": 20,
+      "y": 38,
+      "zone": "subsurface",
+      "name": {
+        "en": "Ultrasonic / Optical Level Sensor",
+        "hi": "अल्ट्रासोनिक / ऑप्टिकल लेवल सेंसर"
+      },
+      "role": {
+        "en": "Continuously measures waste height inside the storage chute and sends a collection request signal to the central PLC once it reaches 75–85% fill.",
+        "hi": "च्यूट में कचरे की ऊंचाई नापता है और 75–85% भरने पर केंद्रीय PLC को वैक्यूम चलाने का सिग्नल भेजता है।"
+      },
+      "failure": {
+        "en": "False readings due to moisture condensation, dust buildup on optical lenses, or loose underground signal cabling.",
+        "hi": "नमी, धूल या कचरे के छींटों से सेंसर लेंस गंदा होना और गलत सिग्नल आना; भूमिगत केबल में नमी।"
+      },
+      "civil": {
+        "en": "Needs IP68-rated waterproof housing and sealed conduit ducting separate from high-voltage power cables.",
+        "hi": "IP68 वाटरप्रूफ केसिंग और पावर केबल से अलग सीलबंद डक्टिंग अनिवार्य है।"
+      },
+      "specs": {
+        "en": "Protection: IP68 · Trigger threshold: 75–85% fill + timed backup cycle",
+        "hi": "सुरक्षा: IP68 · ट्रिगर सीमा: 75–85% भराव + टाइमर बैकअप"
+      }
+    },
+    {
+      "id": "valve",
+      "x": 14,
+      "y": 60,
+      "zone": "subsurface",
+      "name": {
+        "en": "Pneumatic Discharge Valve",
+        "hi": "न्यूमैटिक डिस्चार्ज वाल्व"
+      },
+      "role": {
+        "en": "Heavy-duty gate or flap valve isolating the storage chute from the main vacuum pipe; opens only during its stream's active suction window.",
+        "hi": "मज़बूत गेट वाल्व जो च्यूट को मुख्य वैक्यूम पाइप से अलग रखता है और केवल अपने कचरे के चक्र के समय खुलता है।"
+      },
+      "failure": {
+        "en": "Highest mechanical wear point in the field: grit, glass, or sharp items jam the knife-edge seat or tear elastomeric seals, leaking vacuum pressure.",
+        "hi": "सबसे ज़्यादा घिसाव वाला हिस्सा: कांच, कंकड़ या कठोर कचरे से वाल्व की सील कट सकती है, जिससे वैक्यूम लीक होता है।"
+      },
+      "civil": {
+        "en": "Valve vault must allow technician entry for seal replacement without digging up the road surface.",
+        "hi": "वाल्व पिट ऐसा बनना चाहिए कि सड़क खोदे बिना ऊपर से सील बदली जा सके।"
+      },
+      "specs": {
+        "en": "Actuation: Compressed air / Electric · Critical wear item: elastomeric seal ring",
+        "hi": "संचालन: कंप्रेस्ड एयर / इलेक्ट्रिक · मुख्य रखरखाव हिस्सा: रबर सील रिंग"
+      }
+    },
+    {
+      "id": "pipeline",
+      "x": 42,
+      "y": 72,
+      "zone": "underground",
+      "name": {
+        "en": "Underground Vacuum Pipeline",
+        "hi": "भूमिगत वैक्यूम पाइपलाइन"
+      },
+      "role": {
+        "en": "Sealed welded steel pipe network carrying waste packets at 60–80 km/h from city blocks to the central collection terminal.",
+        "hi": "सीलबंद वेल्डेड स्टील पाइप का नेटवर्क जो कचरे को 60–80 किमी/घंटा की गति से सीधे केंद्रीय टर्मिनल तक ले जाता है।"
+      },
+      "failure": {
+        "en": "Abrasion erosion on outer wall of 90° elbows/bends; accidental puncture during third-party road digging (telecom/water); moisture corrosion.",
+        "hi": "मोड़ों (बेंड्स) पर तेज़ कचरे से घिसाव; सड़क खुदाई के दौरान अन्य विभागों द्वारा पाइप क्षतिग्रस्त होने का खतरा।"
+      },
+      "civil": {
+        "en": "Bends require thick sacrificial wear-back steel (e.g., 8–12 mm at elbows vs 5–6 mm straight pipe), external anti-corrosion coating, and GIS utility mapping before laying.",
+        "hi": "मोड़ों पर मोटी घिसाव-रोधी स्टील प्लेट, बाहर जंग-रोधी कोटिंग, और खुदाई से बचाव के लिए स्पष्ट GIS मैपिंग और चेतावनी टेप ज़रूरी है।"
+      },
+      "specs": {
+        "en": "Diameter: 400–500 mm · Burial Depth: 1.5–2.5 m · Velocity: 60–80 km/h",
+        "hi": "व्यास: 400–500 मिमी · गहराई: 1.5–2.5 मीटर · गति: 60–80 किमी/घंटा"
+      }
+    },
+    {
+      "id": "fans",
+      "x": 83,
+      "y": 60,
+      "zone": "terminal",
+      "name": {
+        "en": "Centrifugal Exhauster Fans",
+        "hi": "सेंट्रीफ्यूगल एग्ज़ॉस्टर पंखे"
+      },
+      "role": {
+        "en": "High-power vacuum blowers inside the terminal that create negative pressure across the entire pipe network to pull air and waste.",
+        "hi": "टर्मिनल में लगे बड़े वैक्यूम ब्लोअर जो पूरी पाइपलाइन में नेगेटिव प्रेशर बनाकर हवा और कचरा खींचते हैं।"
+      },
+      "failure": {
+        "en": "Highest electricity consumer in the system; bearing overheating, impeller imbalance from fine dust bypass, and VFD inverter trips during grid voltage fluctuations.",
+        "hi": "सबसे अधिक बिजली खपत वाला हिस्सा; बेयरिंग गर्म होना, धूल से पंखे का असंतुलन, और वोल्टेज उतार-चढ़ाव से VFD ट्रिप होना।"
+      },
+      "civil": {
+        "en": "Requires isolated vibration-damped RCC foundation pad, acoustic enclosure inside terminal building, and dedicated HT transformer + solar tie-in.",
+        "hi": "कंपन-रोधी RCC नींव, ध्वनि-रोधी कमरा (acoustic enclosure), और स्थिर बिजली सप्लाई/सोलर कनेक्शन ज़रूरी है।"
+      },
+      "specs": {
+        "en": "Drive: Variable Frequency Drive (VFD) · Typical Negative Pressure: -40 to -70 kPa",
+        "hi": "ड्राइव: VFD नियंत्रित · वैक्यूम दबाव: -40 से -70 kPa"
+      }
+    },
+    {
+      "id": "separator",
+      "x": 68,
+      "y": 46,
+      "zone": "terminal",
+      "name": {
+        "en": "Cyclone Air–Waste Separator",
+        "hi": "साइक्लोन हवा-कचरा सेपरेटर"
+      },
+      "role": {
+        "en": "Slows incoming high-speed waste spirally so solids drop down by gravity while transport air exits upward toward the filters.",
+        "hi": "तेज़ गति से आए कचरे को घुमाकर गति कम करता है—कचरा नीचे गिरता है और हवा ऊपर फिल्टर की ओर जाती है।"
+      },
+      "failure": {
+        "en": "Internal wall wear from abrasive grit/sand, wet organic build-up on cone walls, or airlock flap seal leaks reducing vacuum efficiency.",
+        "hi": "रेत/कंकड़ से अंदरूनी दीवार घिसना, गीले कचरे का कोन में जमना, या एयरलॉक लीक होना।"
+      },
+      "civil": {
+        "en": "Needs high terminal bay ceiling clearance (8–10 m vertical headroom) and replaceable internal liner plates.",
+        "hi": "टर्मिनल भवन में पर्याप्त ऊंचाई (8–10 मीटर) और बदलने योग्य इनर लाइनर प्लेट की आवश्यकता होती है।"
+      },
+      "specs": {
+        "en": "Mechanism: Tangential vortex cyclone + rotary/flap airlock",
+        "hi": "प्रक्रिया: साइक्लोन भंवर + रोटरी/फ्लैप एयरलॉक"
+      }
+    },
+    {
+      "id": "compactor",
+      "x": 68,
+      "y": 64,
+      "zone": "terminal",
+      "name": {
+        "en": "Hydraulic Waste Compactor",
+        "hi": "हाइड्रोलिक वेस्ट कॉम्पैक्टर"
+      },
+      "role": {
+        "en": "Compresses separated waste directly into sealed haulage containers via a diverter gate, maximizing payload per truck trip.",
+        "hi": "अलग किए गए कचरे को दबाकर बंद कंटेनरों में भरता है ताकि हर ट्रक ट्रिप में ज़्यादा कचरा जा सके।"
+      },
+      "failure": {
+        "en": "Hydraulic hose leaks, ram cylinder seal wear, and leachate overflow if wet organic waste is over-compressed without drainage.",
+        "hi": "हाइड्रोलिक ऑयल लीक होना, रैम सील घिसना, और गीले कचरे को अधिक दबाने पर लीचेट (गंदा पानी) निकलना।"
+      },
+      "civil": {
+        "en": "Terminal floor slab requires heavy oil-resistant epoxy coating, sloped leachate collection drains to an ETP/holding tank.",
+        "hi": "फर्श पर लीचेट (गंदे पानी) के लिए नाली और छोटे ETP/टैंक की व्यवस्था होना आवश्यक है।"
+      },
+      "specs": {
+        "en": "Compaction ratio: ~3:1 to 5:1 · Coupled with diverter chute per waste stream",
+        "hi": "दबाव अनुपात: ~3:1 से 5:1 · हर कचरे के लिए अलग डाइवर्टर गेट"
+      }
+    },
+    {
+      "id": "containers",
+      "x": 64,
+      "y": 80,
+      "zone": "terminal",
+      "name": {
+        "en": "Sealed Roll-Off Containers",
+        "hi": "सीलबंद रोल-ऑफ़ कंटेनर"
+      },
+      "role": {
+        "en": "Dedicated closed steel containers docked at the terminal—one each for Organic, Recyclable, and Residual streams—awaiting hook-lift pickup.",
+        "hi": "टर्मिनल पर जुड़े बंद स्टील कंटेनर—ऑर्गेनिक, रीसाइकिल और शेष कचरे के लिए अलग-अलग—जिन्हें ट्रक उठाकर ले जाता है।"
+      },
+      "failure": {
+        "en": "Docking gasket wear causing odour seepage; weight sensor drift; delayed municipal truck pickup stalling terminal capacity.",
+        "hi": "डॉकिंग गैस्केट खराब होने से बदबू निकलना; लोड सेल में त्रुटि; ट्रक समय पर न आने पर सिस्टम रुकना।"
+      },
+      "civil": {
+        "en": "Requires 12–15 m external heavy truck turning radius and level concrete apron outside the terminal bay.",
+        "hi": "टर्मिनल के बाहर हुक-लिफ्ट ट्रक मुड़ने के लिए पर्याप्त जगह (12–15 मीटर टर्निंग रेडियस) और मज़बूत कंक्रीट रोड चाहिए।"
+      },
+      "specs": {
+        "en": "Typical capacity: 15–30 m³ sealed steel bin (user-editable in Simulator)",
+        "hi": "क्षमता: लगभग 15–30 घन मीटर (सिमुलेटर में बदला जा सकता है)"
+      }
+    },
+    {
+      "id": "biofilter",
+      "x": 85,
+      "y": 34,
+      "zone": "terminal",
+      "name": {
+        "en": "Dust Filter & Odour Biofilter",
+        "hi": "डस्ट फ़िल्टर व बायोफ़िल्टर"
+      },
+      "role": {
+        "en": "Cleans all vacuum exhaust air of fine particulates and foul gases before discharging cleanly to the outside atmosphere.",
+        "hi": "वैक्यूम की हवा को बाहर छोड़ने से पहले धूल और दुर्गंध पैदा करने वाली गैसों को पूरी तरह साफ करता है।"
+      },
+      "failure": {
+        "en": "Filter bag clogging increasing fan power draw; dry-out of biofilter media in Indian summers killing odour-eating microbes.",
+        "hi": "धूल फिल्टर जाम होने से बिजली की खपत बढ़ना; तेज गर्मी में बायोफिल्टर मीडिया सूखने से बैक्टीरिया खत्म होना।"
+      },
+      "civil": {
+        "en": "Biofilter bed needs automated moisture misting/irrigation and differential pressure sensors across dust cartridges.",
+        "hi": "भारतीय गर्मी में बायोफिल्टर बेड को नम रखने के लिए ऑटोमैटिक पानी का छिड़काव और प्रेशर सेंसर ज़रूरी है।"
+      },
+      "specs": {
+        "en": "Stages: Cyclone dust arrestor → Cartridge/Bag filter → Woodchip/Carbon Biofilter",
+        "hi": "चरण: डस्ट सेपरेटर → कार्ट्रिज फिल्टर → बायोफिल्टर / कार्बन बेड"
+      }
+    },
+    {
+      "id": "control",
+      "x": 84,
+      "y": 78,
+      "zone": "terminal",
+      "name": {
+        "en": "PLC / SCADA Control System",
+        "hi": "PLC / SCADA कंट्रोल सिस्टम"
+      },
+      "role": {
+        "en": "Brain of the network: schedules single-stream suction sequences, adjusts VFD fan speed, logs fault alerts, and reports tonnage to municipal dashboards.",
+        "hi": "सिस्टम का दिमाग: तय करता है कि कब कौन सा वाल्व खुलेगा, पंखे की गति कितनी रहेगी, और नगर निगम डैशबोर्ड पर डेटा भेजता है।"
+      },
+      "failure": {
+        "en": "Field fiber/RS485 communication dropouts; uncalibrated pressure sensors; manual operator override errors bypassing safety interlocks.",
+        "hi": "फील्ड नेटवर्क सिग्नल टूटना, सेंसर कैलिब्रेशन बिगड़ना, या ऑपरेटर द्वारा गलत मैनुअल ओवरराइड।"
+      },
+      "civil": {
+        "en": "Control room needs UPS backup + surge protection and direct digital API readiness for CPCB / SBM-U 2.0 waste tracking portals.",
+        "hi": "कंट्रोल रूम में UPS, सर्ज प्रोटेक्शन और CPCB / SBM-U 2.0 डिजिटल पोर्टल से जुड़ने की सुविधा होनी चाहिए।"
+      },
+      "specs": {
+        "en": "Architecture: Industrial PLC + SCADA + Remote Alerts · Interlock enforced",
+        "hi": "संरचना: इंडस्ट्रियल PLC + SCADA · एक समय में केवल एक स्ट्रीम इंटरलॉक"
+      }
+    }
+  ]
+}

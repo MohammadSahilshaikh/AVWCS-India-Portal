@@ -1,0 +1,76 @@
+{
+  "faqs": [
+    {
+      "id": "old-cities",
+      "category": "feasibility",
+      "q": {
+        "en": "Can AVWCS be installed in old, congested Indian cities?",
+        "hi": "क्या यह प्रणाली पुराने, घने भारतीय शहरों में लग सकती है?"
+      },
+      "a": {
+        "en": "Candidly, no—at least not as a first step. Retrofitting 500 mm steel pipelines under narrow, busy old-city lanes filled with unmapped water, sewer, telecom, and power lines causes extreme road disruption and escalating civil costs. That is why we explicitly recommend starting with greenfield smart townships, large institutional campuses, hospitals, or planned redevelopment zones.",
+        "hi": "स्पष्ट कहें तो शुरुआती चरण में यह बहुत मुश्किल है। पुराने शहरों की संकरी गलियों में पहले से दबी अनमैप्ड पानी, सीवर और बिजली की लाइनों के बीच 500 मिमी की पाइपलाइन डालने से भारी खुदाई, ट्रैफिक जाम और अत्यधिक लागत आएगी। इसलिए हम इसे केवल नई प्लान्ड टाउनशिप, बड़े कैंपस, अस्पताल या एयरपोर्ट से शुरू करने की सलाह देते हैं।"
+      }
+    },
+    {
+      "id": "electricity",
+      "category": "energy",
+      "q": {
+        "en": "How much electricity does the vacuum terminal consume, and does it make carbon emissions worse?",
+        "hi": "वैक्यूम टर्मिनल में कितनी बिजली लगती है, और क्या इससे प्रदूषण बढ़ता है?"
+      },
+      "a": {
+        "en": "Published life-cycle studies place pneumatic waste transport around 80–120 kWh per tonne of waste (plus auxiliary ventilation/filtration loads). If powered 100% by coal-heavy grid electricity, emissions can rival or exceed diesel trucks. However, pairing the terminal with rooftop/captive solar power—which you can test live in our Simulator—tips the balance decisively toward net emission savings.",
+        "hi": "शोध अध्ययनों के अनुसार वैक्यूम परिवहन में लगभग 80–120 kWh प्रति टन बिजली खर्च होती है। यदि यह बिजली पूरी तरह कोयला-आधारित ग्रिड से आए, तो कार्बन उत्सर्जन डीज़ल ट्रकों के बराबर या अधिक हो सकता है। लेकिन टर्मिनल को सोलर/नवीकरणीय ऊर्जा से जोड़ने पर यह सिस्टम पर्यावरण के लिए काफ़ी फ़ायदेमंद हो जाता है—इसे आप हमारे सिमुलेटर में लाइव देख सकते हैं।"
+      }
+    },
+    {
+      "id": "maintenance",
+      "category": "operations",
+      "q": {
+        "en": "Who operates and maintains the valves, sensors, and exhausters?",
+        "hi": "वाल्व, सेंसर और ब्लोअर का रखरखाव कौन करेगा?"
+      },
+      "a": {
+        "en": "Routine municipal sanitation staff cannot maintain pneumatic valves, VFD blowers, or PLC automation without specialized training. Under our Pilot Proposal, we recommend either a PPP/DBFOT concession or a Public Capex + Multi-Year Operator O&M contract with strict uptime SLAs and mandatory local technician training.",
+        "hi": "सामान्य सफ़ाई कर्मचारी बिना विशेष प्रशिक्षण के न्यूमैटिक वाल्व, VFD ब्लोअर या PLC कंट्रोल नहीं संभाल सकते। इसलिए हम PPP/DBFOT मॉडल या 'सरकारी पूंजी + विशेषज्ञ ऑपरेटर O&M अनुबंध' की सलाह देते हैं, जिसमें अनिवार्य स्थानीय प्रशिक्षण और अपटाइम शर्तें शामिल हों।"
+      }
+    },
+    {
+      "id": "mixing",
+      "category": "operations",
+      "q": {
+        "en": "If all waste goes into one underground pipe network, doesn't wet and dry waste get mixed?",
+        "hi": "यदि ज़मीन के नीचे एक ही मुख्य पाइप है, तो क्या गीला और सूखा कचरा आपस में मिल नहीं जाता?"
+      },
+      "a": {
+        "en": "No—because the PLC enforces single-stream sequencing. During an Organic cycle, only Green inlet valves open and the terminal diverter routes material into the Wet Container. Then clean air flushes the pipe for 15–30 seconds and the diverter switches before any Blue (Recyclable) valve is allowed to open.",
+        "hi": "नहीं। PLC सिस्टम एक समय में केवल एक ही कचरे के प्रकार को चलाता है। जब हरे (ऑर्गेनिक) इनलेट का चक्र चलता है, तब नीले और धूसर वाल्व बंद रहते हैं और टर्मिनल का गेट कचरे को गीले कंटेनर में भेजता है। उसके बाद 15–30 सेकंड हवा से पाइप साफ होता है, फिर अगला चक्र चलता है।"
+      }
+    },
+    {
+      "id": "monsoon-power",
+      "category": "feasibility",
+      "q": {
+        "en": "What happens during heavy Indian monsoons or sudden power cuts?",
+        "hi": "तेज़ भारतीय मानसून या बिजली कटौती के दौरान क्या होगा?"
+      },
+      "a": {
+        "en": "Inlets are engineered on raised concrete plinths (+150 mm) with sealed gaskets to prevent rainwater ingress, and chute vaults require waterproofing and sump drainage. For power cuts, the vertical chutes buffer 12–24 hours of waste safely underground while a terminal backup DG/battery-solar microgrid runs priority suction cycles.",
+        "hi": "इनलेट को सड़क से ऊंचे (+150 मिमी) कंक्रीट चबूतरे पर वॉटरटाइट सील के साथ लगाया जाता है ताकि बारिश का पानी अंदर न जाए। बिजली जाने पर भी बंद च्यूट 12–24 घंटे का कचरा सुरक्षित रोक सकते हैं, और टर्मिनल पर बैकअप सोलर/डीजी सेट से सक्शन चलाया जा सकता है।"
+      }
+    },
+    {
+      "id": "cost-accuracy",
+      "category": "feasibility",
+      "q": {
+        "en": "Why does the Simulator show cost and energy in ranges instead of exact ₹ quotes?",
+        "hi": "सिमुलेटर में लागत और बिजली का सटीक आंकड़ा क्यों नहीं, रेंज (सीमा) क्यों दिखती है?"
+      },
+      "a": {
+        "en": "Actual project costs depend heavily on soil rock strata, water table, local trenching rates, steel pipe quotes, and building density. Presenting single-point guesses as facts destroys technical credibility. Showing literature ranges and letting engineers edit assumptions directly maintains scientific honesty until a site-specific DPR is prepared.",
+        "hi": "असली लागत ज़मीन की मिट्टी/चट्टान, जल स्तर, खुदाई दरों और स्टील पाइप की कीमतों पर निर्भर करती है। बिना साइट सर्वे के एक सटीक आंकड़ा दिखाना विश्वसनीयता कम करता है। इसलिए हम साहित्य-आधारित रेंज दिखाते हैं और इंजीनियरों को अपनी वास्तविक दरें डालने का विकल्प देते हैं।"
+      }
+    }
+  ]
+}

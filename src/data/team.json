@@ -1,0 +1,29 @@
+{
+  "projectTitle": {
+    "en": "Automated Vacuum Waste Collection System (AVWCS) — India Urban Feasibility Study",
+    "hi": "स्वचालित वैक्यूम कचरा संग्रह प्रणाली (AVWCS) — भारतीय शहरी फ़ीज़िबिलिटी अध्ययन"
+  },
+  "institution": {
+    "en": "Civil & Environmental Infrastructure Research Group (IIT Project Portal)",
+    "hi": "सिविल एवं पर्यावरण अवसंरचना शोध समूह (IIT प्रोजेक्ट पोर्टल)"
+  },
+  "members": [
+    {
+      "role": { "en": "Lead Student Researcher", "hi": "प्रमुख शोधकर्ता (छात्र)" },
+      "name": { "en": "[Your Name — Edit in data/team.json]", "hi": "[आपका नाम — data/team.json में बदलें]" },
+      "focus": {
+        "en": "Pneumatic network sizing, Indian SWM Rules 2026 integration & township lifecycle modeling",
+        "hi": "न्यूमैटिक पाइप डिज़ाइन, भारतीय SWM नियम 2026 एवं टाउनशिप मॉडलिंग"
+      }
+    },
+    {
+      "role": { "en": "Faculty Advisor / Guide", "hi": "प्रोफेसर / शोध मार्गदर्शक" },
+      "name": { "en": "[Faculty Guide Name — Edit in data/team.json]", "hi": "[गाइड का नाम — data/team.json में बदलें]" },
+      "focus": {
+        "en": "Municipal solid waste engineering, environmental feasibility & public infrastructure policy",
+        "hi": "नगरपालिका ठोस अपशिष्ट इंजीनियरिंग एवं सार्वजनिक नीति समीक्षा"
+      }
+    }
+  ],
+  "contactEmail": "avwcs-feasibility@example.edu.in"
+}
